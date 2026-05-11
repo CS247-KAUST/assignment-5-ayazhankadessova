@@ -2,3 +2,23 @@
 cmake-build-debug
 /out
 /.vs
+
+# CMake build output
+/build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.o
+*.obj
+
+# binaries
+assignment_5B
+*.exe
+
+# macOS
+.DS_Store
+
+# editor
+*.swp
+*~
