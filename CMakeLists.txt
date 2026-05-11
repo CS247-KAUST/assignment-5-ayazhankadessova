@@ -35,6 +35,9 @@ FetchContent_MakeAvailable(imgui)
 # --- 3. INCLUDE DIRECTORIES ---
 include_directories(common common/glad)
 
+# OpenGL (cross-platform)
+find_package(OpenGL REQUIRED)
+
 # Adding compile units to executable
 add_executable(${PROJECT_NAME}
 	src/glad.c 
@@ -61,4 +64,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 target_include_directories(${PROJECT_NAME} PRIVATE ${imgui_SOURCE_DIR})
 
 # --- 5. LINK LIBRARIES ---
-target_link_libraries(${PROJECT_NAME} glfw opengl32 glm::glm)
+target_link_libraries(${PROJECT_NAME} glfw OpenGL::GL glm::glm)
+
+# imgui backends include path (needed even though we don't use imgui in code)
+target_include_directories(${PROJECT_NAME} PRIVATE ${imgui_SOURCE_DIR}/backends)
