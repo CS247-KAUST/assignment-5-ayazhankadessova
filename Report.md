@@ -78,4 +78,26 @@ cmake --build build
 
 ## 6. Screenshots
 
-*will be added*
+<img src="images/image-1.png" width="400" alt="Block dataset, constant-length glyphs">
+
+*Block dataset — constant-length arrow glyphs over the pressure field. Flow pattern around the obstacle is clearly visible.*
+
+<img src="images/image-2.png" width="400" alt="Block dataset, speed-scaled glyphs">
+
+*Same block scene with speed-scaled arrows (key `l`). Low-flow regions now have tiny arrows; the recirculation zone around the obstacle stands out.*
+
+<img src="images/image-3.png" width="700" alt="Tube streamlines">
+
+*Tube dataset — yellow streamlines (forward + backward integration from each seed) over the scalar background, with overlaid arrow glyphs.*
+
+<img src="images/image-4.png" width="400" alt="Hurricane streamlines and pathlines">
+
+*Hurricane dataset — yellow streamlines and red pathlines together, both spiralling into the storm's eye. Pathlines (red) bend through time-varying flow while streamlines (yellow) follow the instantaneous field.*
+
+<img src="images/image-5.png" width="400" alt="Hurricane rainbow colormap">
+
+*Hurricane temperature field with the rainbow colormap (key `c`, blend factor 1.0). Storm eye visible as the warm red core surrounded by the cooler outer bands.*
+
+<img src="images/image-6.png" width="400" alt="Hurricane cool-warm colormap">
+
+*Same field with the cool-warm diverging colormap and streamlines on top. Diverging palette emphasises the hot/cold contrast around the eye.*
